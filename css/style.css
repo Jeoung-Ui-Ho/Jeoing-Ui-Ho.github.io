@@ -1,0 +1,151 @@
+:root{
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --accent-color: orange;
+    --icons-color: rgb(152, 187, 201);
+    --bodybackground-color: lightgray;
+    --navbackground-color: rgb(0, 64, 128);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbackground-color);
+    padding: 8px 12px;
+}
+
+body { 
+    margin: 0;
+    background-color: var(--bodybackground-color);
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+.navbar__menu li {
+  padding: 8px 30px;
+}
+
+.navbar__menu li:hover{
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.unable{
+  display: None;
+}
+
+.enable{
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar__menu li {
+    width: max-content;
+    text-align: center;
+  }
+
+  .self-intro-img {
+    width: 500px;
+    height: 600px;
+  }
+  .self-intro-cats{
+    width: 500px;
+    height: 500px;
+  }
+
+  .al_pic{
+    width: 200px;
+    height: 200px;
+  }
+  .self-intro-description{
+    width: 500px;
+  }
+}
+  
+@media screen and (max-width: 550px){
+  body{
+    padding: 0;
+    margin: 0;
+    width: max-content;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    /* width: 280px; */
+  }
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar__menu li {
+    width: max-content;
+    text-align: center;
+  }
+
+  .self-intro-img {
+    width: 350px;
+    height: 270px;
+  }
+  .self-intro-cats{
+    width: 350px;
+    height: 350px;
+  }
+
+  .al_pic{
+    width: 200px;
+    height: 200px;
+  }
+  .self-intro-description{
+    width: 400px;
+  }
+  .self-intro-cats-description{
+    width: 400px;
+  }
+  .health_pic{
+    width: 400px;
+  }
+
+  .non-alcohol-main{
+    width: 450px;
+  }
+
+  .alcohol-main{
+    width: 450px;
+  }
+}
