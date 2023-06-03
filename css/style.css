@@ -93,3 +93,59 @@ img {
     width: 500px;
   }
 }
+
+
+@media screen and (max-width: 550px){
+  body{
+    padding: 0;
+    margin: 0;
+    width: max-content;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar__menu li {
+    width: max-content;
+    text-align: center;
+  }
+
+  .self-intro-img {
+    width: 300px;
+    height: 220px;
+  }
+  .self-intro-cats{
+    width: 350px;
+    height: 350px;
+  }
+
+  .al_pic{
+    width: 200px;
+    height: 200px;
+  }
+  .self-intro-description{
+    width: 300px;
+  }
+  .self-intro-cats-description{
+    width: 300px;
+  }
+  .health_pic{
+    width: 400px;
+  }
+
+  .non-alcohol-main{
+    width: 450px;
+  }
+
+  .alcohol-main{
+    width: 450px;
+  }
+}
