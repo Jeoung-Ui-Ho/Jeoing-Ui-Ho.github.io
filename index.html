@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 1. 네비게이션 구현 -> 완료-->
+<!-- 2. 페이지 구현 -> 완룐-->
+<!-- 3. css 디자인 조금 만지기-->
+<!-- 4. 모바일 최적화 -->
+<!-- 5. 푸쉬후 정상작동 확인-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- client side 부담을 줄이기 위해 min 버전 사용-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./javascripts/script.js"></script>
+    <title>Jeoung Ui-Ho</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="navbar__menu">
+            <a href="#" onclick="nav_home()">Jeoung Ui-Ho</a>
+        </div>
+
+        <ul class="navbar__menu">
+            <li><a href="#self-introduction" onclick="nav_home()">Home</a></li>
+            <li><a href="#non-alcohol" onclick="nav_non_alcohol()">non-alcohol</a></li>
+            <li><a href="#alcohol" onclick="nav_alcohol()">alcohol</a></li>
+        </ul>
+
+    </nav>
+    <!-- End of nav -->
+
+    <div class="container">
+        <div id="self-introduction" class="enable">
+            <div class="self-intro-main">
+                <ul>
+                    <h1><li>self-introduction</li></h1>
+                    <div>
+                        <img class="self-intro-img" src="./images/self_intro_my_pic.jpg" width="400px" height="550px"
+                            alt="self_intro">
+                    </div>
+                    <div class="self-intro-description">
+                        <h2>About me</h2>
+                        Greeting, I'm in 2nd grade on Department of Computer Engeeneering. I entered here in 2020. And I
+                        returned in 2023.<br>
+                        I have interests on Security, automation, back-end. But, nowadays I also get interest on
+                        Web.<br>
+                        I usally take my time to study math, data structure, algorithm. Sometimes solving algorithm
+                        problems on baekjoon.<br>
+                        (actually lying on bed and spending time to SNS such as youtube, instagram...)<br>
+                        <br>
+                        When I got some free time, In my hometown, I played with my cats.<br>
+                        If I'm not at home normally go to gym, singing room, or bar<br>
+                        I wanna show you my habits.
+                    </div>
+                    <hr>
+                    <div class="self-intro-additional">
+                        <!-- <img class="self-intro-cats" src="./images/cat1.jpg" alt="sample cat" width="20%">
+                        <img class="self-intro-cats" src="./images/cat6.jpg" alt="sample cat6" width="20%">
+                        <br>
+                        <img class="self-intro-cats" src="./images/cat2.jpg" alt="sample cat2" width="20%">
+                        <img class="self-intro-cats" src="./images/cat5.jpg" alt="sample cat5" width="20%"> -->
+                        <img class="self-intro-cats" src="./images/totalcat.jpg" alt="cats" width="30%">
+                        <br>
+                        <div class="self-intro-cats-description">No such special meaning, I just wanna show you my cats. Cute isn't it?</div>
+                    </div>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <!-- End of self-introduction -->
+        <div id="non-alcohol" class="unable">
+            <div class="non-alcohol-main">
+                <ul>
+                    <h1><li>Songs</li></h1>
+                    <div class="non-alcohol-songs-script">I love Rock&Metal, something powerful and releasing adrenaline
+                    </div>
+                    <h1><li>My recommends</li></h1>
+                    <div class="musics">
+                        <div data-role="slider" data-Swidth="400" data-Sheight="300">
+                            <div class="musicContainer">
+                                <img class="item" src="./images/highwaytohell.jpg" alt="music1"
+                                    data-link="https://www.youtube.com/watch?v=qKggnBh2Mdw">
+                                <img class="item" src="./images/sevennationarmy.jpg" alt="music2"
+                                    data-link="https://www.youtube.com/watch?v=0J2QdDbelmY">
+                                <img class="item" src="./images/shotgunblues.jpg" alt="music3"
+                                    data-link="https://www.youtube.com/watch?v=snItFJlBtTc">
+                                <img class="item" src="./images/welcometotheblackperaid.jpg" alt="music4"
+                                    data-link="https://www.youtube.com/watch?v=RRKJiM9Njr8">
+                                <img class="item" src="./images/deadmanwalking.jpg" alt="music5"
+                                    data-link="https://www.youtube.com/watch?v=A-hHb3-8Xsk">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button id="left-button">←</button>
+                        <button id="playLink-button">playLink</button>
+                        <button id="right-button">→</button>
+                    </div>
+
+                    <h1><li>Health</li></h1>
+                    <div class="non-alcohol-health-script">
+                        I mainly hit the big-3(squat, bench press, deadlift). My goal is 3/500. I love powerlifting<br>
+                        <!-- <img src="./images/squart.jpg" alt="squat" width="20%" height="300px">
+                        <img src="./images/bench_press.jpg" alt="bench-press" width="20%" height="300px">
+                        <img src="./images/deadlift.jpg" alt="deadlift" width="20%" height="300px"><br> -->
+                        When I was in army(about 2023.01), I can lift total 420kg.<br>
+                        But after diet... Now I can only lift 320~340kg.<br>
+                        More sad news is I have to diet again. I can't barely konw, how much I will loss my record.<br>
+                        Nevertheless, I will make my record back and hit the goal.<br>
+                        Someday, I make my goal, and then I'm planning learn Jiujitsu or wresting.<br>
+                        <img class="health_pic" src="./images/total_health.jpg" alt="health" width="500px">
+                    </div>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <!-- End of non-alcohol-->
+        <div id="alcohol" class="unable">
+            <div class="alcohol-main">
+                <ul>
+                    <h1><li>Alcohol works</li></h1>
+
+                    <div>When I drink and chill out, usally home, oftenly beachside, sometimes bar.</div>
+                    <img class="al_pic" src="./images/homedrink.jpg" alt="homedrink" width="300px" height="300px">
+                    <img class="al_pic" src="./images/beachdrink.jpg" alt="beachdrink" width="300px" height="300px">
+                    <img class="al_pic" src="./images/bardrink.jpg" alt="bardrink" width="300px" height="300px"><br>
+                    <hr>
+                    <div class="alcohol-buttons">
+                        <button id="btn-all" onclick="able_all()">all</button>
+                        <button id="btn-cocktail" onclick="able_cocktail()">cocktail</button>
+                        <button id="btn-bar" onclick="able_bar()">bar</button>
+                        <button id="btn-recipe" onclick="able_recipe()">recipe</button>
+                        <button id="btn-purchase" onclick="able_purchase()">purchase</button>
+                    </div>
+
+                    <div id="cocktail">
+                        <h1>Cocktails</h1>
+                        <div data-role="Cslider" data-Cwidth="400" data-Cheight="400">
+                            <div class="cocktailContainer">
+                                <img class="Citem" src="./images/cocktails/cocktail1.jpg" alt="cocktail1">
+                                <img class="Citem" src="./images/cocktails/cocktail2.jpg" alt="cocktail2">
+                                <img class="Citem" src="./images/cocktails/cocktail3.jpg" alt="cocktail3">
+                                <img class="Citem" src="./images/cocktails/cocktail4.jpg" alt="cocktail4">
+                                <img class="Citem" src="./images/cocktails/cocktail5.jpg" alt="cocktail5">
+                            </div>
+                        </div>
+
+                        <button id="Cleft-button">←</button>
+                        <button id="Cright-button">→</button>
+                    </div>
+
+                    <div id="bar">
+                        <h1>Bars</h1>
+                        <ol>
+
+                            <h2><li>Sokcho, The highest</li></h2>
+                            <div data-role="Btslider" data-Btwidth="300" data-Btheight="300">
+                                <div class="BtContainer">
+                                    <img class="Btitem" src="./images/bars/thehighest1.jpg" alt="thehightest1">
+                                    <img class="Btitem" src="./images/bars/thehighest2.jpg" alt="thehightest2">
+                                    <img class="Btitem" src="./images/bars/thehighest3.jpg" alt="thehightest3">
+                                </div>
+                            </div>
+                            <div class="Btbuttons">
+                                <button id="Btleft-button">←</button>
+                                <button id="Btright-button">→</button>
+                            </div>
+                            <div>
+                                <h3>Reviews</h3>
+                                <ul>
+                                    <li>nice bottle lineups.</li>
+                                    <li>chill and woody mood.</li>
+                                    <li>good to talk with friends or date with lover.</li>
+                                </ul>
+                            </div>
+
+                            <h2><li>Chuncheon, Shadow bar</li></h2>
+                            <div>
+                                (have no picture... I was drunken....)
+                                <h3>Reviews</h3>
+                                <ul>
+                                    <li>skillful and friendly bartender.</li>
+                                    <li>good to find new people.</li>
+                                    <li>has many signature cocktails.</li>
+                                </ul>
+                            </div>
+
+                            <h2><li>Sokcho, Montbeer</li></h2>
+                            <div data-role="Mbslider" data-Mbwidth="300" data-Mbheight="300">
+                                <div class="MbContainer">
+                                    <img class="Mbitem" src="./images/bars/montbeer.jpg" alt="montbeer1">
+                                    <img class="Mbitem" src="./images/bars/montbeer2.jpg" alt="montbeer2">
+                                    <img class="Mbitem" src="./images/bars/montbeer3.jpg" alt="montbeer3">
+                                    <img class="Mbitem" src="./images/bars/montbeer4.jpg" alt="montbeer4">
+                                    <img class="Mbitem" src="./images/bars/montbeer5.jpg" alt="montbeer5">
+                                </div>
+                            </div>
+                            <div class="Mbbuttons">
+                                <button id="Mbleft-button">←</button>
+                                <button id="Mbright-button">→</button>
+                            </div>
+                            <div>
+                                <h3>Reviews</h3>
+                                <ul>
+                                    <li>super tasty beer!!!</li>
+                                    <li>large variation of beer.</li>
+                                    <li>BBQ.</li>
+                                    <li>have their own brewery.</li>
+                                    <li>But hard to go without car, it so suburbs.</li>
+                                </ul>
+                            </div>
+                            
+                        </ol>
+                    </div>
+
+                    <div id="recipe">
+                        <h1>Recipes</h1>
+                        <br>
+                        <div>
+                            Here're my strongly recommend recipes. I swear worth to try.<br>
+                            <ol>
+                                <h2><li>Basic highball</li></h2>
+                                <div>
+                                    <i>1 shot of Any Whisky + 3 shot of sparkling water</i><br><br>
+                                    Incresing flavor of whisky and lower proof to reduce hangover.
+                                </div>
+                                <h2><li>Midori sour</li></h2>
+                                <div>
+                                    <i>1 shot of Midori + 3 Shot of sprite + 1 shot of blue lemonade</i><br><br>
+                                    Original recipe use sweet&sour mix, but during my experience blue lemonade make taste more sweet and smooth.<br>
+                                    And blue color helps green color more vivid. it looks good!
+                                </div>
+                                <h2><li>Party drink</li></h2>
+                                <div>
+                                    <i>1 shot of vodka, white rum, triple sec + 9 shot of juice(good for grape or orange)</i><br><br>
+                                    It's my original recipe. very sweet and amplify the taste of juice.<br>
+                                    Going in smooth, but it has high proof. Take care of drinking
+                                </div>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div id="purchase">
+                        <h1>Purchase</h1>
+                        <div>
+                            I usually buy bottles on Chuncheon world liquor market. locate on 강원 춘천시 동내면 순환대로 632.<br>
+                            cuz low price and fine quality. but increasing of sprit and liqour bring more accessibility of them.<br>
+                            Now, we can buy bottles on convenience store, mart, or easily order by apps.<br>
+                            But those ways have risk of storage method. like exposing by sun. direct sunlight decompose taste of liquor.<br>
+                            If possible, liquor shop is the best way to buy good ones.<br>
+                            <ol>
+                                <h3>ways</h3>
+                                <li>convenience store</li>
+                                <li>mart</li>
+                                <li>apps(such as GS25, daily shot, etc...)</li>
+                                <li>liquor shot(most recomment)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr>
+                    <h1><li>Recommend Pairings</li></h1>
+
+                    <div>
+                        <ol>
+                            <li>Hamburger + IPA beer</li>
+                            <li>Raw fish + White rum</li>
+                            <li>Chocolate + Whisky</li>
+                            <li>Cheese + Conag</li>
+                            <li>Chiness food + Tequila</li>
+                        </ol>
+                    </div>
+
+                    <h1><li>Additionally</li></h1>
+                    <div>Nowadays, I got interests on traditional liquor. We can purchase by internet!</div>
+                    <hr>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <!-- End of not alcohol-->
+    </div>
+    <!-- End of container-->
+
+</body>
+
+</html>
